@@ -1,0 +1,146 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background: url('../images/the-shire-blur.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    padding: 1px;
+}
+
+.weather-app {
+    width: 800px;
+    max-width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: calc(50vh - 225px);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 3px solid #343434;
+}
+
+.weather-app__visual {
+    background-image: url('../images/the-shire.jpg');
+    background-size: cover;
+    height: 65%;
+}
+
+.weather-app__forecast {
+    height: 45%;
+    width: 100%;
+    background-color: rgba(255,255,255, 0.2);
+    border-top: 1px solid #343434;
+}
+
+.weather-app__tile {
+    float: left;
+    height: 100%;
+    width: 11.5%;
+    border-right: 1px solid #343434;
+    background-color: rgba(255,255,255, 0);
+    -moz-transition: background-color ease-in 0.2s;
+    -o-transition: background-color ease-in 0.2s;
+    -webkit-transition: background-color ease-in 0.2s;
+    transition: background-color ease-in 0.2s;
+}
+
+    .weather-app__tile:hover {
+        background-color: rgba(255,255,255, 0.3);
+    }
+
+    .weather-app__tile:last-child {
+        border-right: none;
+    }
+
+.weather-app__tile--big {
+    width: 30%;
+    padding: 35px 0;
+}
+
+.location-picker__location-field,
+.location-picker__location-field:active,
+.location-picker__location-field:hover {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 30px;
+    padding: 4px;
+    margin: 20px 30px;
+    color: #343434;
+    border-bottom: 2px solid #343434;
+    width: 200px;
+}
+
+.big-tile-splitter {
+    float: left;
+    width: 60%;
+}
+
+.tile-day {
+    background-color: #343434;
+    padding: 3px 4px;
+    margin: 30px auto;
+    margin-bottom: 10px;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.tile-day--big {
+    width: 100px;
+    margin-top: 5px;
+}
+
+.tile-icon {
+    text-align: center;
+    color: #343434;
+    font-size: 40px;
+    line-height: 0.8;
+    margin-bottom: 5px;
+}
+
+.tile-icon--big {
+    font-size: 90px;
+}
+
+.tile-temp {
+    color: #343434;
+    text-align: center;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.tile-temp--max.tile-temp--big,
+.tile-temp--big {
+    font-size: 50px;
+    line-height: 1;
+}
+
+.tile-temp--min.tile-temp--big {
+    font-size: 20px;
+}
+
+.tile-temp--max {
+    font-size: 20px;
+    color: #330000;
+}
+
+.tile-temp--min {
+    line-height: 24px;
+    font-size: 12px;
+    color: #000033;
+}

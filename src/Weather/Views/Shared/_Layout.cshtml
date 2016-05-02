@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+
+        <link rel="stylesheet" href="~/css/lib/climacons.css" />
+        <link rel="stylesheet" href="~/css/weather-app.css" asp-append-version="true" />    
+    </head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="~/js/site.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

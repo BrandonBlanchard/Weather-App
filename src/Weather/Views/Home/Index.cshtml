@@ -1,0 +1,71 @@
+﻿@*
+    Design based off of: https://dribbble.com/shots/1081917-WhereTO-App/attachments/134531
+    Climacons availble here: http://adamwhitcroft.com/climacons/
+    Images are my own
+*@
+
+<div class="background">
+    <div class="container">
+        <div class="weather-app">
+            <div class="weather-app__visual">
+                <div class="location-picker">
+                    @* Kinda dig this app, might extend it to allow people to enter thier location.. DOES NOT WORK CURRENTLY :( *@
+                    <input type="text" class="location-picker__location-field" value="Seattle, Wa" />
+                </div>
+            </div>
+            <div class="weather-app__forecast">
+
+                <div id="day-0" class="weather-app__tile weather-app__tile--big">
+                    <div class="big-tile-splitter">
+                        <div class="tile-temp tile-temp--big tile-temp--max"></div>
+                        <div class="tile-temp tile-temp--big tile-temp--min"></div>
+                        <div class="tile-day tile-day--big">Sunday</div>
+                    </div>
+                    <div class="tile-icon tile-icon--big climacon"></div>
+                </div>
+
+                <div id="day-1" class="weather-app__tile">
+                    <div class="tile-day">Mon</div>
+                    <div class="tile-icon climacon"></div>
+                    <div class="tile-temp tile-temp--max"></div>
+                    <div class="tile-temp tile-temp--min"></div>
+                </div>
+
+                <div id="day-2" class="weather-app__tile">
+                    <div class="tile-day">tue</div>
+                    <div class="tile-icon climacon"></div>
+                    <div class="tile-temp tile-temp--max"></div>
+                    <div class="tile-temp tile-temp--min"></div>
+                </div>
+
+                <div id="day-3" class="weather-app__tile">
+                    <div class="tile-day">wed</div>
+                    <div class="tile-icon climacon"></div>
+                    <div class="tile-temp tile-temp--max"></div>
+                    <div class="tile-temp tile-temp--min"></div>
+                </div>
+
+                <div id="day-4" class="weather-app__tile">
+                    <div class="tile-day">thu</div>
+                    <div class="tile-icon climacon"></div>
+                    <div class="tile-temp tile-temp--max"></div>
+                    <div class="tile-temp tile-temp--min"></div>
+                </div>
+
+                <div id="day-5" class="weather-app__tile">
+                    <div class="tile-day">fri</div>
+                    <div class="tile-icon climacon"></div>
+                    <div class="tile-temp tile-temp--max"></div>
+                    <div class="tile-temp tile-temp--min"></div>
+                </div>
+
+                <div id="day-6" class="weather-app__tile">
+                    <div class="tile-day">Sat</div>
+                    <div class="tile-icon climacon"></div>
+                    <div class="tile-temp tile-temp--max"></div>
+                    <div class="tile-temp tile-temp--min"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
